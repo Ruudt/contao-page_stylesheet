@@ -1,0 +1,38 @@
+{
+  "name": "ruudt/contao-page-stylesheet",
+  "description": "Add individual stylesheets to individual pages.",
+  "keywords": ["contao", "css", "stylesheets", "pages", "backend module"],
+  "type": "contao-module",
+  "license": "GPL-3.0-or-later",
+  "authors":[
+    {
+      "name":"Ruud Walraven",
+      "role":"Developer"
+    }
+  ],
+  "support":{
+    "email": "ruud.walraven+composer@gmail.com",
+    "source":"https://github.com/Ruudt/contao-page_stylesheet",
+    "issues":"https://github.com/Ruudt/contao-page_stylesheet/issues"
+  },
+  "require": {
+    "php": ">=7.0",
+    "contao/core-bundle": "~4.4",
+    "contao-community-alliance/composer-plugin":"~2.4 || ~3.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Ruudt\\ContaoPageStylesheetBundle\\": "src/"
+    },
+    "classmap": [
+      "src/Resources/contao/"
+    ],
+    "exclude-from-classmap": [
+      "src/Resources/contao/config/",
+      "src/Resources/contao/languages/"
+    ]
+  },
+  "extra": {
+    "contao-manager-plugin": "Ruudt\\ContaoPageStylesheetBundle\\ContaoManager\\Plugin"
+  }
+}
