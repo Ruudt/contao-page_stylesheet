@@ -16,7 +16,7 @@ use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Extension\Extension;
 use Symfony\Component\DependencyInjection\Loader\YamlFileLoader;
 
-class RuudtContaoPageStylesheetBundleExtension extends Extension
+class RuudtContaoPageStylesheetExtension extends Extension
 {
     /**
      * {@inheritdoc}
@@ -28,7 +28,6 @@ class RuudtContaoPageStylesheetBundleExtension extends Extension
             new FileLocator(__DIR__.'/../Resources/config')
         );
 
-        $loader->load('listener.yml');
         $loader->load('services.yml');
     }
 }
