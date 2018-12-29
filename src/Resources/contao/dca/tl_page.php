@@ -19,7 +19,8 @@ $GLOBALS['TL_DCA']['tl_page']['fields']['stylesheet'] = array
 		'filter'                  => true,
 		'inputType'               => 'checkboxWizard',
 		'options_callback'        => array('tl_page_stylesheets', 'getStyleSheets'),
-		'eval'                    => array('multiple'=>true)
+		'eval'                    => array('multiple'=>true),
+		'sql'                     => "varchar(255) NOT NULL default ''",
 	);
 
 
