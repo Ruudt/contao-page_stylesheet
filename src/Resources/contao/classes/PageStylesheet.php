@@ -9,7 +9,7 @@
  * @license    GPL-3.0+
  */
 class PageStylesheet extends Frontend {
-    public function generatePage(Database_Result $objPage, Database_Result $objLayout, PageRegular $objPageRegular)
+    public function generatePage(PageModel $objPage, LayoutModel  $objLayout, PageRegular $objPageRegular)
     {
         $arrStyleSheets = deserialize($objPage->stylesheet);
 
